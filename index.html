@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+ <title>ログイン-google</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+ <!--外部スタイルシート（.css）という拡張子の独立したファイルにスタイルを記述し、<link>で参照する。外部スタイルシートでは、複数のページでスタイルを共有できる。-->
+
+ <center>
+       <div class="container">
+       <h1>ログイン</h1>
+       <p>作業を続けるには、ログインしてください。</p>
+       <p>ユーザー名</p>
+       <input type="text" id="username" class="textbox" placeholder="ユーザー名を入力">
+       <p>パスワード</p>
+       <input type="text" id="password" class="textbox" placeholder="パスワードを入力">
+       <br><input type="checkbox" id="showpassword" onchange="showOrHide()" class="margin">
+       <span>パスワードを表示</span>
+       <br><input type="button" value="ログイン" class="button margin" onclick="login()>
+    </div>
+ </center>
+
+<!--<div>＝文章をブロックに区分する
+    <center>＝中央に表示
+    type=タグの中でMIMEタイプを指定する。
+    id=要素にidで指定した識別子をつける。
+    placeholder=textboxの中に文字を表示する？-->
+ 
+  <div class="container2">
+      <center>
+      <h3>アカウント情報</h3>
+      </center>
+      <p id="user">ユーザー名：</p>
+      <p id="age">年齢：</p>
+      <p id="email">Eメール：</p>
+      <p id="password2">パスワード：</p>
+  </div>
+
+</body>
+<script src="script.js"></script>
